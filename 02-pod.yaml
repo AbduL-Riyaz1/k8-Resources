@@ -1,5 +1,5 @@
 kind: pod
-api version: v1
+apiVersion: v1
 metadata:
   name: nginx
 spec:
