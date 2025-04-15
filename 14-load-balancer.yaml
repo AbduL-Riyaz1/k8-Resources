@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+maetadata:
+  name: sercice-lb
+spec:
+  type: LoadBalancer
+  selector:
+    environment: dev
+    project: expence
+    component: backend
+    version: "1.0.0"
+    demo: lb
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30007
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-lb
+  lables:
+    environment: dev
+    project: expence
+    component: backend
+    version: "1.0.0"
+    demo: lb
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+
