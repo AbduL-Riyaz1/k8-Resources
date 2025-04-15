@@ -6,10 +6,10 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  env:
-  - name: course
-    value: kubernatees
-  - name: duration
-    value: "25 hrs"
-  - name: Triner
-    value: SKAR
+    env:
+    - name: course
+      value: kubernatees
+    - name: duration
+      value: "25 hrs"
+    - name: Triner
+      value: SKAR
