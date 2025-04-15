@@ -1,5 +1,5 @@
-kind: configMap
 apiVersion: v1
+kind: ConfigMap
 metadata:
   name: my-confige
 data:
