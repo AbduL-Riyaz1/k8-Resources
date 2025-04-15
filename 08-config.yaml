@@ -1,0 +1,7 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: my-confige
+data:
+  course: "k8"
+  duration: "25hrs"
