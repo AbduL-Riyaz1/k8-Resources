@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: my-services
 spec:
-  selectors:
+  selector:
     environment: dev
     project: expence
     component: backend
